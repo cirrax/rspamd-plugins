@@ -1,0 +1,2 @@
+razor/razor.lua usr/share/rspamd/lua
+debian/razor.conf /etc/rspamd/modules.d

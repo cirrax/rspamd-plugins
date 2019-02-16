@@ -1,0 +1,8 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@ --with systemd,sysuser
+
+# do not install any /etc/init.d scripts, we use systemd
+override_dh_installinit:
+	dh_installinit --noscripts

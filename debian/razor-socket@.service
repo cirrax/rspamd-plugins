@@ -1,0 +1,25 @@
+[Unit]
+Description=Razor Socket Service
+Documentation=https://github.com/cgt/rspamd-plugins
+Requires=razor-socket.socket
+
+[Service]
+Type=simple
+ExecStart=/usr/sbin/razorsocket
+StandardInput=socket
+StandardError=syslog
+TimeoutStopSec=10
+
+User=razorsocket
+NoNewPrivileges=true
+PrivateDevices=true
+PrivateTmp=true
+PrivateUsers=true
+ProtectControlGroups=true
+ProtectHome=true
+ProtectKernelModules=true
+ProtectKernelTunables=true
+ProtectSystem=strict
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,15 @@
+[Unit]
+Description=pyzorsocket
+Documentation=https://github.com/cgt/rspamd-plugins
+
+[Service]
+Type=simple
+User=pyzorsocket
+Group=pyzorsocket
+ExecStart=/usr/bin/python3 /usr/sbin/pyzorsocket.py 127.0.0.1 5953
+StandardOutput=syslog
+StandardError=syslog
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

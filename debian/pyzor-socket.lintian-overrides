@@ -1,0 +1,3 @@
+script-with-language-extension usr/sbin/pyzorsocket.py
+binary-without-manpage usr/sbin/pyzorsocket.py
+executable-not-elf-or-script usr/sbin/pyzorsocket.py

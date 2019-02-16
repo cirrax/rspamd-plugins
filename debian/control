@@ -1,0 +1,54 @@
+Source: rspamd-plugins
+Section: mail
+Priority: optional
+Maintainer: Benedikt Trefzer <benedikt.trefzer@cirrax.com>
+Build-Depends: debhelper (>= 10),
+               dh-systemd,
+               dh-sysuser,
+Standards-Version: 3.9.8
+Homepage: https://github.com/cgt/rspamd-plugins
+
+Package: rspamd-razor
+Architecture: all
+Depends: ${misc:Depends},
+         razor-socket,
+         rspamd (>= 1.6.5),
+Description: rspamd plugin for razor
+ Integrate Vipul's Razor with Rspamd
+ razor plugin for rspamd
+ .
+ see https://github.com/cgt/rspamd-plugins for details
+
+Package: razor-socket
+Architecture: all
+Depends: ${misc:Depends},
+         razor (>= 2.85),
+         systemd (>= 232),
+Description: razor socket for rspamd-razor plugin
+ some systemd hokupokus to allow razor queries
+ through socket.
+ .
+ see https://github.com/cgt/rspamd-plugins for details
+
+Package: rspamd-pyzor
+Architecture: all
+Depends: ${misc:Depends},
+         rspamd (>= 1.6.5),
+         pyzor-socket,
+Description: rspamd plugin for pyzor
+ A pyzor plugin for rspam
+ connects to pyzor throuh a socket.
+ .
+ see https://github.com/cgt/rspamd-plugins for details
+
+Package: pyzor-socket
+Architecture: all
+Depends: ${misc:Depends},
+         python,
+         pyzor (>=1.0.0),
+         systemd (>= 232),
+Description: pyzor socket for rspamd-pyzor plugin
+ Daemon to allow pyzor queries through a socket.
+ Daemon is written in Python.
+ .
+ see https://github.com/cgt/rspamd-plugins for details

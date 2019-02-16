@@ -1,0 +1,6 @@
+rspamd-plugins (0.0.1) UNRELEASED; urgency=medium
+
+  * Initial release.
+  * Based on the work of Christoffer G. Thomsen (for razor plugin)
+
+ -- Benedikt Trefzer <benedikt.trefzer@cirrax.com>  Wed, 13 Feb 2019 17:29:50 +0100
