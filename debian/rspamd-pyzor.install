@@ -1,1 +1,2 @@
 pyzor/pyzor.lua usr/share/rspamd/lua
+debian/pyzor.conf /etc/rspamd/modules.d
