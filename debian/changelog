@@ -1,4 +1,10 @@
-rspamd-plugins (0.0.1) UNRELEASED; urgency=medium
+rspamd-plugins (0.0.2) unstable; urgency=medium
+
+  * add pyzor configuration file 
+
+ -- Benedikt Trefzer <benedikt.trefzer@cirrax.com>  Sat, 23 Mar 2019 12:35:27 +0100
+
+rspamd-plugins (0.0.1) unstable; urgency=medium
 
   * Initial release.
   * Based on the work of Christoffer G. Thomsen (for razor plugin)
