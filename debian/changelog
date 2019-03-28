@@ -1,3 +1,9 @@
+rspamd-plugins (0.0.5) unstable; urgency=medium
+
+  * fix empty messages whith digest da39a3ee5e6b4b0d3255bfef95601890afd80709
+
+ -- Benedikt Trefzer <benedikt.trefzer@cirrax.com>  Thu, 28 Mar 2019 14:17:40 +0100
+
 rspamd-plugins (0.0.2) unstable; urgency=medium
 
   * add pyzor configuration file 
